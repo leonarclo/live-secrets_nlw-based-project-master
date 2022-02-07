@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+html {
+   --light-purple: #d9dbe8;
+   --purple: #786ba4;
+   --dark-blue: #253744;
+   --orange-pastel: #eabca3;
+   --brown: #4c4343;
+   --green: #639bab;
+   --red-brown: #9a6b7f;
+   --white: rgb(247, 244, 244);
+   --light-grey: rgb(158, 158, 158);
+   --light-pink: rgb(232, 222, 227);
+
+   font-size: 62.5%;
+}
+
+body {
+   display: flex;
+   height: 100vh; /*tamanho vertical da tela completo*/
+   background: var(--white);
+}
+
+body, button, input, textarea {
+   font-size: clamp(14px, 1.6rem, 2vw);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   /* font-family: 'Balsamiq Sans', cursive; */
+}
+
+.sr-only {
+   position: absolute;
+   height: 1px;
+   width: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip-path: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+.content {
+   width: 100%;
+   margin: 0 auto;
+}
+
+/* IMPUT AND BUTTONS */
+input, button, .button, .btn {
+   border-radius: .8rem;
+   height: 5rem;   
+}
+
+button, .button {
+   font-family: 'Balsamiq Sans', cursive;
+   line-height: 0;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background: var(--purple);
+   color: #fff;
+
+   cursor: pointer;
+   transition: filter .2s;
+}
+
+.btn {
+   font-family: 'Balsamiq Sans', cursive;
+   line-height: 0;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: .2rem solid var(--purple);
+   padding: 0 1.6rem;
+   color: var(--purple);
+
+   transition: background .2s;
+}
+
+.button:hover, button:hover {
+   filter: brightness(1.2);
+}
+
+.btn:hover {
+   background: rgb(255, 255, 255);
+}
+
+button > img
+.btn > img {
+   margin-right: 1rem;
+   width: 2rem;
+}
+
+/* LOGO HEADER*/
+
+header .img {
+   max-width: 50px;
+   max-height: 50px;
+   width: auto;
+   height: auto;
+}
+
+header .logo {
+   font-family: 'Balsamiq Sans', cursive;
+   font-size: 4rem;
+   color: var(--purple);
+   font-weight: bold;
+}
+
+.content header {
+   width: 80%;
+   margin: 3.5rem auto;
+}
